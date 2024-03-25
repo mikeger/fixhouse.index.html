@@ -1,0 +1,1026 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl-300Italic.eot");
+  src: url("../fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold Italic';
+  src: url("../fonts/MuseoSansCyrl-700Italic.eot");
+  src: url("../fonts/MuseoSansCyrl-700Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-700Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 4, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 7, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+body {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+
+/* line 10, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 13, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.container {
+  max-width: 1170px;
+  width: 96%;
+  margin: auto;
+}
+
+@media (max-width: 640px) {
+  /* line 13, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .container {
+    width: 90%;
+  }
+}
+
+/* line 20, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.button {
+  background-color: #ffd200;
+  color: #333;
+  border: none;
+  font-family: 'Museo Sans Bold Italic', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 18px 47px;
+  border-radius: 10px;
+}
+
+/* line 28, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.button:hover {
+  background-color: #ffdb33;
+}
+
+/* line 31, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.input {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 20px 25px;
+  font-size: 15px;
+}
+
+/* line 37, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.section-title {
+  font-size: 30px;
+  font-family: 'Museo Sans Bold Italic', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  line-height: 45px;
+}
+
+/* line 43, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.section-subtitle {
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+}
+
+/* line 49, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.header {
+  padding: 20px 0;
+}
+
+/* line 51, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.header-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 55, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.header__info {
+  display: flex;
+  text-align: right;
+}
+
+/* line 58, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  /* line 58, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .header__contacts {
+    display: none;
+  }
+}
+
+/* line 65, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.header__address {
+  color: #333;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* line 69, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.header__phone {
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+  margin-top: 5px;
+  font-family: 'Museo Sans Bold Italic', sans-serif;
+  font-weight: 700;
+}
+
+/* line 77, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.header__button {
+  padding: 18px 47px;
+  border-radius: 10px;
+  margin-left: 30px;
+  font-size: 13 px;
+}
+
+/* line 83, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.main {
+  background-color: #f5f5f5;
+}
+
+/* line 85, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.main-block {
+  display: flex;
+  padding: 40px 0 15 px 0;
+}
+
+@media (max-width: 1200px) {
+  /* line 85, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .main-block {
+    flex-direction: column;
+  }
+}
+
+/* line 90, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.main-text {
+  flex-basis: 50%;
+}
+
+@media (max-width: 1200px) {
+  /* line 90, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .main-text {
+    margin-bottom: 30px;
+  }
+}
+
+/* line 94, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.main-text__title {
+  font-size: 41px;
+  color: #333;
+  padding-right: 200px;
+  line-height: 55px;
+  font-family: 'Museo Sans Bold Italic', sans-serif;
+  font-weight: 700;
+  margin: 45px 0 20px 0;
+}
+
+@media (max-width: 1200px) {
+  /* line 94, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .main-text__title {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 94, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .main-text__title {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+}
+
+/* line 106, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.main-text__subtitle {
+  font-size: 20px;
+  line-height: 65px;
+  color: #333;
+}
+
+@media (max-width: 640px) {
+  /* line 106, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .main-text__subtitle {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+/* line 113, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.main-image {
+  margin-right: -55px;
+}
+
+@media (max-width: 1200px) {
+  /* line 113, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .main-image {
+    width: 100%;
+  }
+}
+
+/* line 117, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.main-list {
+  margin: 40px 0 0;
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 640px) {
+  /* line 117, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .main-list {
+    margin: 30px 0 0;
+  }
+}
+
+/* line 122, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.main-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* line 126, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.main-list__item:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  /* line 122, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .main-list__item {
+    margin-bottom: 15px;
+  }
+}
+
+/* line 130, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.main-list__image {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffd200;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+/* line 139, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.main-list__text {
+  line-height: 24px;
+  font-size: 14px;
+  color: #333;
+}
+
+@media (max-width: 640px) {
+  /* line 139, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .main-list__text {
+    font-size: 12px;
+    max-width: 250px;
+  }
+}
+
+/* line 148, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.offer {
+  padding: 90px 0;
+  background-image: url("../img/offer-bg.jpg");
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  /* line 148, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .offer {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 148, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .offer {
+    background: #fff;
+  }
+}
+
+/* line 158, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.offer:before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+
+/* line 166, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  /* line 166, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+/* line 173, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.offer-title {
+  font-size: 24px;
+  line-height: 35px;
+  max-width: 350px;
+  margin-bottom: 25px;
+  font-family: 'Museo Sans Bold Italic', sans-serif;
+  font-weight: 700;
+}
+
+/* line 179, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.offer-subtitle {
+  display: inline-block;
+  max-width: 240px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* line 184, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.offer__input {
+  margin-right: 15px;
+  margin-bottom: 30px;
+  width: 220px;
+}
+
+@media (max-width: 1200px) {
+  /* line 184, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .offer__input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* line 191, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.offer__input:first-child {
+  margin-right: 15px;
+}
+
+/* line 193, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.offer__button {
+  width: 96.5%;
+  min-height: 70px;
+}
+
+@media (max-width: 1200px) {
+  /* line 193, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .offer__button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 193, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .offer__button {
+    font-size: 16px;
+  }
+}
+
+/* line 201, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.portfolio {
+  padding: 100px 0;
+  background: #f5f5f5 url("../img/portfolio_bg.png");
+  background-size: 50%;
+}
+
+/* line 206, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.portfolio__title {
+  margin-bottom: 100px;
+  color: #333;
+}
+
+/* line 209, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.portfolio__arrows {
+  max-width: 120px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 70px;
+}
+
+/* line 216, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.arrows__left, .arrows__rigth {
+  cursor: pointer;
+}
+
+/* line 220, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.slider__image {
+  margin: auto;
+}
+
+/* line 223, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.price {
+  padding: 100px 0;
+}
+
+/* line 225, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.price__title {
+  margin-bottom: 60px;
+}
+
+/* line 227, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.price__card {
+  margin-bottom: 30px;
+}
+
+/* line 230, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* line 235, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  transition: .2s;
+}
+
+/* line 239, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.card:hover {
+  box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* line 241, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.card:hover .card__image::before {
+  opacity: 1;
+}
+
+/* line 243, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.card__text {
+  padding: 40px;
+}
+
+/* line 245, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.card__title {
+  margin-top: 0;
+}
+
+/* line 247, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.card__image {
+  position: relative;
+}
+
+/* line 249, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.card__image img {
+  display: block;
+}
+
+/* line 251, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.card__image::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  transition: .2s;
+}
+
+/* line 262, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.card__subtitle {
+  margin-bottom: 60px;
+}
+
+/* line 264, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.card__title {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+/* line 268, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.card__link {
+  display: inline-block;
+  font-family: 'Museo Sans Bold Italic', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+
+/* line 275, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.card__link:hover::after {
+  height: 13px;
+}
+
+/* line 277, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.card__link::after {
+  content: '';
+  width: 100%;
+  display: block;
+  height: 3px;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  background-color: #ffd200;
+  z-index: -1;
+  transition: .2s;
+}
+
+/* line 289, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.steps {
+  padding-bottom: 120px;
+}
+
+/* line 291, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.steps__title {
+  margin-bottom: 60px;
+}
+
+/* line 293, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.steps__subtitle {
+  margin-bottom: 75px;
+}
+
+/* line 296, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 301, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.icon {
+  text-align: center;
+  position: relative;
+}
+
+/* line 305, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.icon:last-child::after {
+  display: none;
+}
+
+/* line 307, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.icon::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  right: -65%;
+  width: 72px;
+  height: 25px;
+  background-image: url("../img/sipocka.png");
+}
+
+/* line 317, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.icon__image {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 3px solid #ffd200;
+  border-color: #ffd200;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* line 328, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.icon__image img {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+/* line 332, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.icon__text {
+  max-width: 140px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 338, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.notice {
+  background-color: #a4f46b;
+  padding: 100px 0;
+}
+
+/* line 341, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.notice__text {
+  text-align: center;
+  font-size: 32px;
+  max-width: 750px;
+  margin: auto;
+  line-height: 50px;
+  font-weight: 300;
+}
+
+/* line 349, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.info {
+  padding: 100px;
+}
+
+/* line 351, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.info__block {
+  margin-bottom: 150px;
+}
+
+/* line 354, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.benefits {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 358, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.benefit {
+  background-color: #f7f7f7;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 370px;
+}
+
+/* line 367, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.benefit__image {
+  height: 410px;
+  min-width: 370px;
+  background-color: #f7f7f7;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 379, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.benefit__text {
+  margin: 26px 100px 0  26px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+/* line 384, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.benefit__text strong {
+  font-family: 'Museo Sans Bold Italic', sans-serif;
+  font-weight: 700;
+}
+
+/* line 388, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.documents__title {
+  margin-bottom: 100px;
+}
+
+/* line 391, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.documents-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 394, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.documents-block__text {
+  text-align: center;
+  margin-top: 40px;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+/* line 403, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.brief {
+  background-size: 50%, cover;
+  background-repeat: repeat-y, no-repead;
+  padding: 100px;
+  background-position: left center, center right;
+}
+
+@media (max-width: 768px) {
+  /* line 403, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .brief {
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repead;
+    padding: 100px 0;
+    background-position: left center, center bottom;
+    padding: 50px;
+  }
+}
+
+/* line 415, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.brief-block {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  /* line 415, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .brief-block {
+    flex-direction: column;
+  }
+}
+
+/* line 421, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.brief__interview {
+  flex-basis: 50%;
+  background-color: #ffd200;
+}
+
+/* line 425, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.brief__form {
+  flex-basis: 50%;
+  padding-left: 200px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  /* line 425, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .brief__form {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 425, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .brief__form {
+    padding-left: 0;
+  }
+}
+
+/* line 434, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.brief__input {
+  width: 100%;
+  min-width: 370px;
+  margin-bottom: 15px;
+}
+
+/* line 438, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.brief__button {
+  width: 100%;
+  min-width: 370px;
+  display: block;
+  height: 70px;
+  margin: 15px auto 30px auto;
+}
+
+/* line 447, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.interview {
+  padding-right: 70px;
+}
+
+@media (max-width: 1200px) {
+  /* line 447, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .interview {
+    padding-right: 30px;
+  }
+}
+
+/* line 451, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.interview__title {
+  font-family: 'Museo Sans Bold Italic', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+  /* line 451, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .interview__title {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+}
+
+/* line 459, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.interview__subtitle {
+  font-size: 16px;
+  margin-bottom: 100px;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  /* line 459, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .interview__subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+/* line 466, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.interview-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* line 469, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.interview-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  font-family: 'Museo Sans Bold Italic', sans-serif;
+  font-weight: 700;
+}
+
+/* line 474, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.interview-list__counter {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #000;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50px;
+  margin-right: 30px;
+  font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  /* line 474, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .interview-list__counter {
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+/* line 487, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.interview-list__text {
+  min-width: 400px;
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  /* line 487, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .interview-list__text {
+    font-size: 14px;
+    min-width: 300px;
+  }
+}
+
+/* line 495, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.from__title {
+  font-family: 'Museo Sans Bold Italic', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+  /* line 495, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .from__title {
+    margin-bottom: 18px;
+    font-size: 18px;
+    margin-top: 150px;
+  }
+}
+
+/* line 504, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.from__subtitle {
+  font-size: 16px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  /* line 504, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+  .from__subtitle {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+}
+
+/* line 511, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.from__descrption {
+  font-size: 15px;
+}
+
+/* line 514, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.footer {
+  position: relative;
+}
+
+/* line 518, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.map {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 524, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.contacts {
+  flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+/* line 528, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.contacts-block {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 531, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.contacts__title {
+  font-family: 'Museo Sans Bold Italic', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 100px;
+}
+
+/* line 536, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.contacts-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 539, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 20px;
+}
+
+/* line 545, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.contacts-list__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+/* line 549, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.contacts-list__item strong {
+  font-family: 'Museo Sans Bold Italic', sans-serif;
+  font-weight: 700;
+}
+
+/* line 551, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.contacts-list__text {
+  line-height: 1.4;
+}
+
+/* line 553, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.contacts-list__text a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 556, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.contacts-list__text a:hover {
+  text-decoration: underline;
+}
+
+/* line 560, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+/* line 568, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.modal_active {
+  display: flex;
+}
+
+/* line 570, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.modal-dialog {
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-height: 200px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+/* line 577, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.modal-dialog_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 583, ../../../../../../Tetiana Kotolup/OneDrive/Рабочий стол/house fix/src/sass/style.sass */
+.error {
+  border: 3px solid red;
+}
+
+/*# sourceMappingURL=style.css.map */

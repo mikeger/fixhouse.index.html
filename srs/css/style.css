@@ -1,0 +1,775 @@
+@font-face {
+  font-family: "Museo Sans Light";
+  src: url("../fonts/MuseoSansCyrl-300Italic.eot");
+  src: url("../fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo Sans Bold Italic";
+  src: url("../fonts/MuseoSansCyrl-700Italic.eot");
+  src: url("../fonts/MuseoSansCyrl-700Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-700Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Museo Sans Light", sans-serif;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  width: 96%;
+  margin: auto;
+}
+@media (max-width: 640px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.button {
+  background-color: #ffd200;
+  color: #333;
+  border: none;
+  font-family: "Museo Sans Bold Italic", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 18px 47px;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: #ffdb33;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 20px 25px;
+  font-size: 15px;
+}
+
+.section-title {
+  font-size: 30px;
+  font-family: "Museo Sans Bold Italic", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  line-height: 45px;
+}
+
+.section-subtitle {
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+}
+
+.header {
+  padding: 20px 0;
+}
+.header-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__info {
+  display: flex;
+  text-align: right;
+}
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 640px) {
+  .header__contacts {
+    display: none;
+  }
+}
+.header__address {
+  color: #333;
+  font-size: 13px;
+  font-weight: 400;
+}
+.header__phone {
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+  margin-top: 5px;
+  font-family: "Museo Sans Bold Italic", sans-serif;
+  font-weight: 700;
+}
+.header__button {
+  padding: 18px 47px;
+  border-radius: 10px;
+  margin-left: 30px;
+  font-size: 13 px;
+}
+
+.main {
+  background-color: #f5f5f5;
+}
+.main-block {
+  display: flex;
+  padding: 40px 0 15 px 0;
+}
+@media (max-width: 1200px) {
+  .main-block {
+    flex-direction: column;
+  }
+}
+.main-text {
+  flex-basis: 50%;
+}
+@media (max-width: 1200px) {
+  .main-text {
+    margin-bottom: 30px;
+  }
+}
+.main-text__title {
+  font-size: 41px;
+  color: #333;
+  padding-right: 200px;
+  line-height: 55px;
+  font-family: "Museo Sans Bold Italic", sans-serif;
+  font-weight: 700;
+  margin: 45px 0 20px 0;
+}
+@media (max-width: 1200px) {
+  .main-text__title {
+    padding-right: 10px;
+  }
+}
+@media (max-width: 640px) {
+  .main-text__title {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+}
+.main-text__subtitle {
+  font-size: 20px;
+  line-height: 65px;
+  color: #333;
+}
+@media (max-width: 640px) {
+  .main-text__subtitle {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+.main-image {
+  margin-right: -55px;
+}
+@media (max-width: 1200px) {
+  .main-image {
+    width: 100%;
+  }
+}
+.main-list {
+  margin: 40px 0 0;
+  padding: 0 0 0 0;
+}
+@media (max-width: 640px) {
+  .main-list {
+    margin: 30px 0 0;
+  }
+}
+.main-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.main-list__item:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 640px) {
+  .main-list__item {
+    margin-bottom: 15px;
+  }
+}
+.main-list__image {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffd200;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.main-list__text {
+  line-height: 24px;
+  font-size: 14px;
+  color: #333;
+}
+@media (max-width: 640px) {
+  .main-list__text {
+    font-size: 12px;
+    max-width: 250px;
+  }
+}
+
+.offer {
+  padding: 90px 0;
+  background-image: url("../img/offer-bg.jpg");
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+}
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+}
+.offer:before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+.offer-title {
+  font-size: 24px;
+  line-height: 35px;
+  max-width: 350px;
+  margin-bottom: 25px;
+  font-family: "Museo Sans Bold Italic", sans-serif;
+  font-weight: 700;
+}
+.offer-subtitle {
+  display: inline-block;
+  max-width: 240px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.offer__input {
+  margin-right: 15px;
+  margin-bottom: 30px;
+  width: 220px;
+}
+@media (max-width: 1200px) {
+  .offer__input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+.offer__input:first-child {
+  margin-right: 15px;
+}
+.offer__button {
+  width: 96.5%;
+  min-height: 70px;
+}
+@media (max-width: 1200px) {
+  .offer__button {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .offer__button {
+    font-size: 16px;
+  }
+}
+
+.portfolio {
+  padding: 100px 0;
+  background: #f5f5f5 url("../img/portfolio_bg.png");
+  background-size: 50%;
+}
+.portfolio__title {
+  margin-bottom: 100px;
+  color: #333;
+}
+.portfolio__arrows {
+  max-width: 120px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.arrows__left, .arrows__rigth {
+  cursor: pointer;
+}
+
+.slider__image {
+  margin: auto;
+}
+
+.price {
+  padding: 100px 0;
+}
+.price__title {
+  margin-bottom: 60px;
+}
+.price__card {
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  transition: 0.2s;
+}
+.card:hover {
+  box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.1);
+}
+.card:hover .card__image::before {
+  opacity: 1;
+}
+.card__text {
+  padding: 40px;
+}
+.card__title {
+  margin-top: 0;
+}
+.card__image {
+  position: relative;
+}
+.card__image img {
+  display: block;
+}
+.card__image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  transition: 0.2s;
+}
+.card__subtitle {
+  margin-bottom: 60px;
+}
+.card__title {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 30px;
+}
+.card__link {
+  display: inline-block;
+  font-family: "Museo Sans Bold Italic", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+.card__link:hover::after {
+  height: 13px;
+}
+.card__link::after {
+  content: "";
+  width: 100%;
+  display: block;
+  height: 3px;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  background-color: #ffd200;
+  z-index: -1;
+  transition: 0.2s;
+}
+
+.steps {
+  padding-bottom: 120px;
+}
+.steps__title {
+  margin-bottom: 60px;
+}
+.steps__subtitle {
+  margin-bottom: 75px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  text-align: center;
+  position: relative;
+}
+.icon:last-child::after {
+  display: none;
+}
+.icon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: -65%;
+  width: 72px;
+  height: 25px;
+  background-image: url("../img/sipocka.png");
+}
+.icon__image {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 3px solid #ffd200;
+  border-color: #ffd200;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.icon__image img {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.icon__text {
+  max-width: 140px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.notice {
+  background-color: #a4f46b;
+  padding: 100px 0;
+}
+.notice__text {
+  text-align: center;
+  font-size: 32px;
+  max-width: 750px;
+  margin: auto;
+  line-height: 50px;
+  font-weight: 300;
+}
+
+.info {
+  padding: 100px;
+}
+.info__block {
+  margin-bottom: 150px;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefit {
+  background-color: #f7f7f7;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 370px;
+}
+.benefit__image {
+  height: 410px;
+  min-width: 370px;
+  background-color: #f7f7f7;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
+}
+.benefit__text {
+  margin: 26px 100px 0 26px;
+  font-size: 16px;
+  line-height: 23px;
+}
+.benefit__text strong {
+  font-family: "Museo Sans Bold Italic", sans-serif;
+  font-weight: 700;
+}
+
+.documents__title {
+  margin-bottom: 100px;
+}
+
+.documents-block {
+  display: flex;
+  justify-content: space-between;
+}
+.documents-block__text {
+  text-align: center;
+  margin-top: 40px;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.brief {
+  background-size: 50%, cover;
+  background-repeat: repeat-y, no-repead;
+  padding: 100px;
+  background-position: left center, center right;
+}
+@media (max-width: 768px) {
+  .brief {
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repead;
+    padding: 100px 0;
+    background-position: left center, center bottom;
+    padding: 50px;
+  }
+}
+.brief-block {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .brief-block {
+    flex-direction: column;
+  }
+}
+.brief__interview {
+  flex-basis: 50%;
+  background-color: #ffd200;
+}
+.brief__form {
+  flex-basis: 50%;
+  padding-left: 200px;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .brief__form {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .brief__form {
+    padding-left: 0;
+  }
+}
+.brief__input {
+  width: 100%;
+  min-width: 370px;
+  margin-bottom: 15px;
+}
+.brief__button {
+  width: 100%;
+  min-width: 370px;
+  display: block;
+  height: 70px;
+  margin: 15px auto 30px auto;
+}
+
+.interview {
+  padding-right: 70px;
+}
+@media (max-width: 1200px) {
+  .interview {
+    padding-right: 30px;
+  }
+}
+.interview__title {
+  font-family: "Museo Sans Bold Italic", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 50px;
+}
+@media (max-width: 1200px) {
+  .interview__title {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+}
+.interview__subtitle {
+  font-size: 16px;
+  margin-bottom: 100px;
+  display: block;
+}
+@media (max-width: 1200px) {
+  .interview__subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+.interview-list {
+  list-style-type: none;
+  padding: 0;
+}
+.interview-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  font-family: "Museo Sans Bold Italic", sans-serif;
+  font-weight: 700;
+}
+.interview-list__counter {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #000;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50px;
+  margin-right: 30px;
+  font-size: 14px;
+}
+@media (max-width: 1200px) {
+  .interview-list__counter {
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+}
+.interview-list__text {
+  min-width: 400px;
+  font-size: 18px;
+}
+@media (max-width: 1200px) {
+  .interview-list__text {
+    font-size: 14px;
+    min-width: 300px;
+  }
+}
+
+.from__title {
+  font-family: "Museo Sans Bold Italic", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 50px;
+}
+@media (max-width: 1200px) {
+  .from__title {
+    margin-bottom: 18px;
+    font-size: 18px;
+    margin-top: 150px;
+  }
+}
+.from__subtitle {
+  font-size: 16px;
+  margin-bottom: 50px;
+  display: block;
+}
+@media (max-width: 1200px) {
+  .from__subtitle {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+}
+.from__descrption {
+  font-size: 15px;
+}
+
+.footer {
+  position: relative;
+}
+
+.map {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.contacts {
+  flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+.contacts-block {
+  display: flex;
+  justify-content: flex-end;
+}
+.contacts__title {
+  font-family: "Museo Sans Bold Italic", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 100px;
+}
+.contacts-list {
+  padding: 0;
+  list-style-type: none;
+}
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 20px;
+}
+.contacts-list__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.contacts-list__item strong {
+  font-family: "Museo Sans Bold Italic", sans-serif;
+  font-weight: 700;
+}
+.contacts-list__text {
+  line-height: 1.4;
+}
+.contacts-list__text a {
+  color: #000;
+  text-decoration: none;
+}
+.contacts-list__text a:hover {
+  text-decoration: underline;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.modal_active {
+  display: flex;
+}
+.modal-dialog {
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-height: 200px;
+  background-color: #fff;
+  padding: 40px;
+}
+.modal-dialog_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.error {
+  border: 3px solid red;
+}/*# sourceMappingURL=style.css.map */
